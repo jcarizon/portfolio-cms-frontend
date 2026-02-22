@@ -1,0 +1,41 @@
+# --- Dependencies & Tools ---
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# --- IDEs & System Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+
+# --- Backend (NestJS) ---
+backend/dist/
+backend/node_modules/
+backend/prisma/migrations/
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# --- Frontend (Next.js) ---
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/.env*.local
+!frontend/.env.example
+
+# --- Build Artifacts & TS ---
+dist/
+build/
+**/out-tsc
+**/coverage
+**/*.tsbuildinfo
+next-env.d.ts
